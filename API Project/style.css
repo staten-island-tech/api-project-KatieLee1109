@@ -1,0 +1,15 @@
+:root{
+  --h1: 7.5rem;
+  --h2: 6rem;
+  --h3: 5rem;
+  --h4: 4rem;
+  --h5: 3rem;
+}
+head,
+body,
+*{
+
+}
+h1{
+  font-family: 'Heebo', sans-serif;
+}
