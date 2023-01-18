@@ -12,4 +12,6 @@ body,
 }
 h1{
   font-family: 'Heebo', sans-serif;
+  font-size: var(--h1);
+  text-align: center;
 }
