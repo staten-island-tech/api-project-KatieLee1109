@@ -1,13 +1,29 @@
 import "../style.css";
-const URL = "http://dog-api.kinduff.com/api/facts";
+const URL = "https://api.lyrics.ovh/v1/artist/title";
 async function getData(URL) {
     try {
-        const response = await fetch(URL);
-        const data = await response.json();
-        document.getElementById("api-response").textContent = data.content;
+      const response = await fetch(URL);
+      const {} = await response.json();
+  
+      function display() {
+        forEach((word) => {
+          document.getElementById("api-response").insertAdjacentElement(
+            "afterbegin",
+            `<div class="card"
+            id="${word.name}">
+            <div class="songname"
+            id=${word.artist}">
+            <div class="artistname"
+            id="${word.lyrics}
+            </div>
+            `
+          );
+        });
+      }
+      display();
     } catch (error) {
-        console.log(error);
+      console.log(error);
+      alert("An error has occured");
     }
-}
-getData(URL);
-
+  }
+  getData(URL);
