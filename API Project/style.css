@@ -1,6 +1,6 @@
 
 :root{
-  --h1: 7.5rem;
+  --h1: 6.5rem;
   --h2: 6rem;
   --h3: 5rem;
   --h4: 4rem;
@@ -9,12 +9,15 @@
 head,
 body,
 *{
-  background-color: silver;
+  background-color: rgb(192, 192, 192);
 }
-h1{
-  font-family: 'Heebo', sans-serif;
-  font-size: var(--h1);
+.btn2{
+  font-size: var(--h2);
   text-align: center;
+}
+.query{
+  align-items: center;
+  size: var(--h2);
 }
 h2{
   font-family: 'Heebo', sans-serif;
