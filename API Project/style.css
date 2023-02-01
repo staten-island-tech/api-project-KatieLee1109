@@ -9,7 +9,7 @@
 head,
 body,
 *{
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(202, 202, 202);
 }
 .btn2{
   font-size: var(--h2);
@@ -17,7 +17,8 @@ body,
 }
 .query{
   align-items: center;
-  size: var(--h2);
+  size: var(--h1);
+  text-align: center;
 }
 h2{
   font-family: 'Heebo', sans-serif;
