@@ -3,7 +3,7 @@ let input = document.querySelector(".query")
 let form = document.querySelector(".search")
 let p = document.querySelector(".display")
 
-form.addEventListener("click", (e)=> {
+form.addEventListener("click", (e) => {
     e.preventDefault();
     let inputVal = input.value;
     display(inputVal)
@@ -17,7 +17,7 @@ async function display(value) {
     let data = await callAPI(value);
     console.log(data)
     data.data.forEach(element => {
-        p.insertAdjacentHTML('afterend', `<p>${element.title}</p>`)
+        p.insertAdjacentHTML('afterend', `<p class="yay">${element.title}</p>`)
     });
     p.innerHTML = data.data[0]
 };

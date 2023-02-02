@@ -4,22 +4,32 @@
   --h2: 6rem;
   --h3: 5rem;
   --h4: 4rem;
-  --h5: 3rem;
+  --h5: 1.5rem;
 }
 head,
 body,
 *{
   background-color: rgb(202, 202, 202);
 }
-.btn2{
+.btn{
   font-size: var(--h2);
+  font-weight: bold;
   text-align: center;
 }
 .query{
   align-items: center;
-  size: var(--h1);
+  size: var(--h5);
   text-align: center;
+}
+.placeholder{
+  font-size: var(--h5);
 }
 h2{
   font-family: 'Heebo', sans-serif;
 }
+.search{
+  font-size: var(--h5);
+  font-weight: bold;
+  border-radius: 3px;
+}
+
